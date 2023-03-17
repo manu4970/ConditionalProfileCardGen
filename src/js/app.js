@@ -29,17 +29,17 @@ function render(variables = {}) {
   let cover = `<div class="cover"><img src="${variables.background}" /></div>`;
   if (variables.includeCover == false) cover = "<div class='cover'></div>";
 
-  if (variables.name == null) variables.name = "Manuel";
-  if (variables.lastname == null) variables.lastname = "Perez";
+  if (variables.name == null) variables.name = "Ingresa tu nombre";
+  if (variables.lastname == null) variables.lastname = "Ingresa tu apellido";
   if (variables.socialMediaPosition == "position-left")
     variables.socialMediaPosition = "position-left";
   if (variables.twitter == null) variables.twitter;
   if (variables.github == "alesanchezr") variables.github;
   if (variables.linkedin == null) variables.linkedin;
   if (variables.instagram == null) variables.instagram;
-  if (variables.role == null) variables.role;
-  if (variables.city == null) variables.city;
-  if (variables.country == null) variables.country;
+  if (variables.role == null) variables.role = "role";
+  if (variables.city == null) variables.city = "city";
+  if (variables.country == null) variables.country = "country";
 
   // reset the website body with the new html output
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
